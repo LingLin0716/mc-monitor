@@ -10,7 +10,7 @@ load_dotenv()
 
 SERVER_ADDRESS = os.getenv("SERVER_ADDRESS")
 DISCORD_WEBHOOK_URL = os.getenv("DISCORD_WEBHOOK_URL")
-CHECK_INTERVAL = os.getenv("CHECK_INTERVAL")
+CHECK_INTERVAL = 30
 
 last_known_players: set[str] = set()
 HEADERS = {"User-Agent": "MinecraftPlayerMonitor/1.0"}
